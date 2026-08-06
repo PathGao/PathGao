@@ -56,8 +56,8 @@
     </linearGradient>
 
     <linearGradient id="haze" gradientUnits="userSpaceOnUse" x1="0" y1="192" x2="0" y2="62">
-      <stop offset="0%"   stop-color="#eaf6ff" stop-opacity=".62"/>
-      <stop offset="55%"  stop-color="#eaf6ff" stop-opacity=".16"/>
+      <stop offset="0%"   stop-color="#eaf6ff" stop-opacity=".40"/>
+      <stop offset="55%"  stop-color="#eaf6ff" stop-opacity=".09"/>
       <stop offset="100%" stop-color="#eaf6ff" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="mfade" gradientUnits="userSpaceOnUse" x1="470" y1="0" x2="740" y2="0">
@@ -109,6 +109,32 @@
     <!-- 圆冠树 / 针叶树 -->
     <g id="tree1"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#2f4a2c"/><ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#3f8a45"/><ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#4fa353"/></g>
     <g id="tree2"><rect x="-1.4" y="-8" width="2.8" height="9" fill="#2b452a"/><path d="M0 -30 L8 -12 L-8 -12 Z" fill="#367a3f"/><path d="M0 -24 L9.5 -6 L-9.5 -6 Z" fill="#45964c"/></g>
+    <!-- 秋黄 -->
+    <g id="tree3"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#4a3a22"/>
+      <ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#cf9128"/>
+      <ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#e8b63c"/>
+      <circle cx="5.5" cy="-11.5" r="2.6" fill="#b86a1c"/></g>
+    <!-- 樱花 -->
+    <g id="tree4">
+      <path d="M0 1 L-0.5 -9 M-0.3 -6 L-4.2 -10.5 M0 -7.5 L3.8 -11.5" stroke="#4a3630"
+            stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-4.5" cy="-13"   rx="6.5" ry="5.4" fill="#f0b0c8"/>
+      <ellipse cx="4.2"  cy="-12.5" rx="6"   ry="5"   fill="#f0b0c8"/>
+      <ellipse cx="0"    cy="-17"   rx="7.6" ry="6"   fill="#fad0de"/>
+      <ellipse cx="-3.2" cy="-19.6" rx="5"   ry="4"   fill="#fde8f0"/>
+      <ellipse cx="4.6"  cy="-17.6" rx="4.6" ry="3.6" fill="#fde8f0"/>
+      <g fill="#e884ad"><circle cx="-6.2" cy="-14.8" r="1"/><circle cx="2.2" cy="-20.2" r=".9"/>
+        <circle cx="6.4" cy="-13.8" r=".9"/><circle cx="-1.2" cy="-12.8" r="1"/>
+        <circle cx="-5" cy="-19" r=".8"/></g>
+    </g>
+    <!-- 杨梅 -->
+    <g id="tree5"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#2f4a2c"/>
+      <ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#377a3d"/>
+      <ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#469a49"/>
+      <g fill="#a3203f"><circle cx="4.5" cy="-11.5" r="1.9"/><circle cx="-5.5" cy="-13" r="1.7"/>
+        <circle cx="1" cy="-19.5" r="1.6"/><circle cx="7.5" cy="-16.5" r="1.5"/>
+        <circle cx="-2" cy="-9.5" r="1.6"/><circle cx="-8" cy="-17" r="1.4"/></g></g>
+
   </defs>
 
   <rect width="1000" height="280" fill="#0b0f13"/>
@@ -225,10 +251,19 @@
     <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 200 L470 200 Z" fill="#5aa042"/>
     <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 174 Q 960 160 900 178 Q 810 206 690 186 Q 580 168 470 192 Z" fill="#bce46a" opacity=".65"/>
     <g>
-      <use xlink:href="#tree2" x="612" y="182"/><use xlink:href="#tree1" x="646" y="184"/>
-      <use xlink:href="#tree2" x="686" y="186"/><use xlink:href="#tree1" x="726" y="188"/>
-      <use xlink:href="#tree2" x="836" y="180"/><use xlink:href="#tree1" x="874" y="176"/>
-      <use xlink:href="#tree2" x="920" y="172"/><use xlink:href="#tree1" x="962" y="174"/>
+      <use xlink:href="#tree2" transform="translate(604 173) scale(1.0)"/>
+      <use xlink:href="#tree3" transform="translate(636 174) scale(0.86)"/>
+      <use xlink:href="#tree4" transform="translate(668 178) scale(1.18)"/>
+      <use xlink:href="#tree5" transform="translate(700 181) scale(0.92)"/>
+      <use xlink:href="#tree4" transform="translate(732 185) scale(1.08)"/>
+      <use xlink:href="#tree2" transform="translate(764 187) scale(0.8)"/>
+      <use xlink:href="#tree1" transform="translate(796 189) scale(1.0)"/>
+      <use xlink:href="#tree3" transform="translate(828 184) scale(1.22)"/>
+      <use xlink:href="#tree5" transform="translate(860 178) scale(0.88)"/>
+      <use xlink:href="#tree2" transform="translate(892 172) scale(1.12)"/>
+      <use xlink:href="#tree4" transform="translate(924 167) scale(0.9)"/>
+      <use xlink:href="#tree1" transform="translate(956 163) scale(1.06)"/>
+      <use xlink:href="#tree3" transform="translate(988 165) scale(0.84)"/>
     </g>
 
     <!-- 桥：从城市这头横过江去 -->
@@ -285,8 +320,40 @@
       <path d="M960 244 q 2 -8 6 -11 M968 244 q -1 -7 2 -10"/>
     </g>
     <g>
-      <circle cx="668" cy="236" r="2" fill="#f7e07a"/><circle cx="786" cy="238" r="2" fill="#fff6e0"/>
-      <circle cx="874" cy="235" r="2" fill="#f0a0c0"/><circle cx="944" cy="238" r="2" fill="#f7e07a"/>
+      <circle cx="620" cy="239" r="1.8" fill="#f0a0c0"/><circle cx="652" cy="236" r="2" fill="#f7e07a"/>
+      <circle cx="684" cy="240" r="1.7" fill="#fff6e0"/><circle cx="716" cy="237" r="2" fill="#c9539a"/>
+      <circle cx="754" cy="240" r="1.8" fill="#f7e07a"/><circle cx="786" cy="238" r="2" fill="#fff6e0"/>
+      <circle cx="818" cy="241" r="1.7" fill="#a3203f"/><circle cx="850" cy="237" r="2" fill="#f0a0c0"/>
+      <circle cx="882" cy="240" r="1.8" fill="#f7e07a"/><circle cx="914" cy="236" r="1.9" fill="#c9539a"/>
+      <circle cx="946" cy="239" r="2" fill="#fff6e0"/><circle cx="978" cy="237" r="1.8" fill="#f7e07a"/>
+    </g>
+
+    <!-- 飘落的花瓣与黄叶 -->
+    <g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0;16 26;2 54;18 84" dur="11s" repeatCount="indefinite"/>
+        <ellipse cx="742" cy="150" rx="2.6" ry="1.5" fill="#f5b9cf">
+          <animate attributeName="opacity" values="0;.9;.9;0" dur="11s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 742 150" to="360 742 150" dur="3.4s" repeatCount="indefinite"/></ellipse></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0;-12 30;6 58;-8 90" dur="14s" repeatCount="indefinite"/>
+        <ellipse cx="838" cy="144" rx="2.8" ry="1.6" fill="#e8b63c">
+          <animate attributeName="opacity" values="0;.85;.85;0" dur="14s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="360 838 144" to="0 838 144" dur="4.1s" repeatCount="indefinite"/></ellipse></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0;-10 26;8 56;-6 88" dur="10.5s" repeatCount="indefinite"/>
+        <ellipse cx="700" cy="152" rx="2.5" ry="1.5" fill="#f0b0c8">
+          <animate attributeName="opacity" values="0;.9;.9;0" dur="10.5s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 700 152" to="360 700 152" dur="3.1s" repeatCount="indefinite"/></ellipse></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0;15 30;-3 62;13 94" dur="13s" repeatCount="indefinite"/>
+        <ellipse cx="892" cy="142" rx="2.4" ry="1.4" fill="#fad0de">
+          <animate attributeName="opacity" values="0;.85;.85;0" dur="13s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="360 892 142" to="0 892 142" dur="3.9s" repeatCount="indefinite"/></ellipse></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0;14 28;-2 60;16 92" dur="9.5s" repeatCount="indefinite"/>
+        <ellipse cx="930" cy="138" rx="2.4" ry="1.4" fill="#fbd0e0">
+          <animate attributeName="opacity" values="0;.9;.9;0" dur="9.5s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="0 930 138" to="360 930 138" dur="2.9s" repeatCount="indefinite"/></ellipse></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0;-14 32;4 64;-10 96" dur="12.5s" repeatCount="indefinite"/>
+        <ellipse cx="672" cy="146" rx="2.6" ry="1.5" fill="#cf9128">
+          <animate attributeName="opacity" values="0;.8;.8;0" dur="12.5s" repeatCount="indefinite"/>
+          <animateTransform attributeName="transform" type="rotate" from="360 672 146" to="0 672 146" dur="3.7s" repeatCount="indefinite"/></ellipse></g>
     </g>
 
     <!-- 白天的鸟 -->
