@@ -38,9 +38,5 @@
 - **[tauri](https://github.com/PathGao/tauri)** // 更小、更快、更安全的桌面端
 - 还有几个在打磨，见得了人再放出来
 
-### 找到我
-
-- 写信 // [1072599417gyb@gmail.com](mailto:1072599417gyb@gmail.com)
-
 <sub>致敬《The Secret Life of Walter Mitty》。<br>
 去看世界，去靠近，去感受——然后回来把它写成代码。</sub>
