@@ -9,13 +9,13 @@
       <stop offset="31%"  stop-color="#453e6a"/>
       <stop offset="43%"  stop-color="#8d5f76"/>
       <stop offset="54%"  stop-color="#d98a63"/>
-      <stop offset="64%"  stop-color="#f2bc80"/>
-      <stop offset="77%"  stop-color="#93cfef"/>
-      <stop offset="100%" stop-color="#e2f4fc"/>
+      <stop offset="62%"  stop-color="#f0be82"/>
+      <stop offset="78%"  stop-color="#f6dc98"/>
+      <stop offset="100%" stop-color="#f7e3a1"/>
     </linearGradient>
 
-    <linearGradient id="zenith" gradientUnits="userSpaceOnUse" x1="0" y1="34" x2="0" y2="176">
-      <stop offset="0%"   stop-color="#050a1c" stop-opacity=".34"/>
+    <linearGradient id="zenith" gradientUnits="userSpaceOnUse" x1="0" y1="34" x2="760" y2="200">
+      <stop offset="0%"   stop-color="#050a1c" stop-opacity=".38"/>
       <stop offset="100%" stop-color="#050a1c" stop-opacity="0"/>
     </linearGradient>
 
@@ -23,32 +23,32 @@
       <stop offset="0%"   stop-color="#2a3054"/>
       <stop offset="35%"  stop-color="#4b4573"/>
       <stop offset="60%"  stop-color="#9a7f92"/>
-      <stop offset="80%"  stop-color="#8fb0c6"/>
-      <stop offset="100%" stop-color="#a6c8d6"/>
+      <stop offset="80%"  stop-color="#cdae7c"/>
+      <stop offset="100%" stop-color="#dcc491"/>
     </linearGradient>
 
     <linearGradient id="ridgeNear" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
       <stop offset="0%"   stop-color="#141a2f"/>
       <stop offset="34%"  stop-color="#2c2d4c"/>
       <stop offset="52%"  stop-color="#4a4553"/>
-      <stop offset="70%"  stop-color="#528251"/>
-      <stop offset="100%" stop-color="#6dbb64"/>
+      <stop offset="70%"  stop-color="#5f8a45"/>
+      <stop offset="100%" stop-color="#93bf55"/>
     </linearGradient>
 
     <linearGradient id="riverG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
       <stop offset="0%"   stop-color="#0d1226"/>
       <stop offset="30%"  stop-color="#1a2340"/>
       <stop offset="52%"  stop-color="#5a4a58"/>
-      <stop offset="72%"  stop-color="#4e88a4"/>
-      <stop offset="100%" stop-color="#77b6cc"/>
+      <stop offset="72%"  stop-color="#a89463"/>
+      <stop offset="100%" stop-color="#d8c383"/>
     </linearGradient>
 
     <linearGradient id="bankG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
       <stop offset="0%"   stop-color="#080d1a"/>
       <stop offset="34%"  stop-color="#131a2c"/>
       <stop offset="55%"  stop-color="#2a3630"/>
-      <stop offset="74%"  stop-color="#43804a"/>
-      <stop offset="100%" stop-color="#66bd5f"/>
+      <stop offset="74%"  stop-color="#5c8a3e"/>
+      <stop offset="100%" stop-color="#93bd50"/>
     </linearGradient>
 
     <linearGradient id="scrim" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0">
@@ -79,7 +79,7 @@
 
   <g clip-path="url(#frame)">
     <rect x="0" y="34" width="1000" height="212" fill="url(#sky)"/>
-    <rect x="0" y="34" width="1000" height="142" fill="url(#zenith)"/>
+    <rect x="0" y="34" width="1000" height="212" fill="url(#zenith)"/>
 
     <!-- 星（只在左边的夜里） -->
     <g fill="#e6ecf5">
@@ -126,7 +126,7 @@
       <ellipse cx="550" cy="104" rx="105" ry="3.4"/><ellipse cx="740" cy="126" rx="80" ry="2.8"/>
       <ellipse cx="1010" cy="104" rx="105" ry="3.4"/><ellipse cx="1200" cy="126" rx="80" ry="2.8"/>
     </g>
-    <g opacity=".8" fill="#ffffff" filter="url(#soft)">
+    <g opacity=".82" fill="#fff8e4" filter="url(#soft)">
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-380 0" dur="96s" repeatCount="indefinite"/>
       <g><ellipse cx="700" cy="88" rx="30" ry="11"/><ellipse cx="722" cy="82" rx="22" ry="14"/><ellipse cx="744" cy="90" rx="26" ry="10"/></g>
       <g><ellipse cx="900" cy="118" rx="26" ry="9"/><ellipse cx="918" cy="112" rx="19" ry="12"/><ellipse cx="936" cy="119" rx="22" ry="8"/></g>
@@ -184,8 +184,8 @@
           fill="url(#ridgeNear)"/>
 
     <!-- 白天那侧的绿丘与树林 -->
-    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 200 L470 200 Z" fill="#4a9350"/>
-    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 174 Q 960 160 900 178 Q 810 206 690 186 Q 580 168 470 192 Z" fill="#7cc96b" opacity=".55"/>
+    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 200 L470 200 Z" fill="#5f9440"/>
+    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 174 Q 960 160 900 178 Q 810 206 690 186 Q 580 168 470 192 Z" fill="#aed063" opacity=".6"/>
     <g>
       <use xlink:href="#tree2" x="612" y="182"/><use xlink:href="#tree1" x="646" y="184"/>
       <use xlink:href="#tree2" x="686" y="186"/><use xlink:href="#tree1" x="726" y="188"/>
@@ -212,13 +212,13 @@
       <rect x="279" y="183" width="2.5" height="28" opacity=".24"><animate attributeName="opacity" values=".42;.14;.42" dur="3.8s" repeatCount="indefinite"/></rect>
       <rect x="359" y="183" width="2.5" height="26" opacity=".28"><animate attributeName="opacity" values=".15;.4;.15" dur="4.9s" repeatCount="indefinite"/></rect>
     </g>
-    <g fill="#8fd9a0">
+    <g fill="#fff0b8">
       <rect x="619" y="183" width="3" height="20" opacity=".3"><animate attributeName="opacity" values=".14;.4;.14" dur="3.5s" repeatCount="indefinite"/></rect>
       <rect x="692" y="183" width="3" height="24" opacity=".26"><animate attributeName="opacity" values=".38;.12;.38" dur="4.6s" repeatCount="indefinite"/></rect>
       <rect x="842" y="183" width="3" height="22" opacity=".3"><animate attributeName="opacity" values=".16;.42;.16" dur="3.0s" repeatCount="indefinite"/></rect>
       <rect x="926" y="183" width="3" height="26" opacity=".24"><animate attributeName="opacity" values=".4;.14;.4" dur="4.1s" repeatCount="indefinite"/></rect>
     </g>
-    <g fill="#ffffff">
+    <g fill="#fffaea">
       <ellipse cx="742" cy="190" rx="7" ry="1.2" opacity=".5"><animate attributeName="opacity" values=".2;.8;.2" dur="2.4s" repeatCount="indefinite"/></ellipse>
       <ellipse cx="800" cy="197" rx="9" ry="1.4" opacity=".45"><animate attributeName="opacity" values=".75;.15;.75" dur="3.1s" repeatCount="indefinite"/></ellipse>
       <ellipse cx="864" cy="188" rx="6" ry="1.1" opacity=".5"><animate attributeName="opacity" values=".25;.85;.25" dur="2.7s" repeatCount="indefinite"/></ellipse>
@@ -247,12 +247,12 @@
       <path d="M960 244 q 2 -8 6 -11 M968 244 q -1 -7 2 -10"/>
     </g>
     <g>
-      <circle cx="668" cy="236" r="2" fill="#f7e07a"/><circle cx="786" cy="238" r="2" fill="#f2f2f2"/>
+      <circle cx="668" cy="236" r="2" fill="#f7e07a"/><circle cx="786" cy="238" r="2" fill="#fff6e0"/>
       <circle cx="874" cy="235" r="2" fill="#f0a0c0"/><circle cx="944" cy="238" r="2" fill="#f7e07a"/>
     </g>
 
     <!-- 白天的鸟 -->
-    <g stroke="#3d5a6a" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".65">
+    <g stroke="#6b5330" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".6">
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-560 -30" dur="40s" repeatCount="indefinite"/>
       <path d="M880 106 l7 -5 l7 5"/><path d="M910 96 l6 -4 l6 4"/><path d="M1140 112 l7 -5 l7 5"/><path d="M1170 102 l6 -4 l6 4"/>
     </g>
@@ -326,7 +326,7 @@
     <rect x="64" y="182" width="9" height="2.5" fill="#e8b48c">
       <animate attributeName="opacity" values="1;1;0;0" dur="1.05s" calcMode="discrete" repeatCount="indefinite"/>
     </rect>
-    <text x="936" y="60" font-size="12" fill="#22475e" letter-spacing="1.6" text-anchor="end" opacity=".7">Sep.99</text>
+    <text x="936" y="60" font-size="12" fill="#6b4c1c" letter-spacing="1.6" text-anchor="end" opacity=".75">Sep.99</text>
   </g>
 
   <!-- 齿孔片基 -->
