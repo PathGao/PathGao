@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="白日梦想家 — The Secret Life of PathGao">
+  <title>白日梦想家 — The Secret Life of PathGao</title>
+
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#0e1c2b"/>
+      <stop offset="34%"  stop-color="#1d4a5c"/>
+      <stop offset="60%"  stop-color="#3f7f83"/>
+      <stop offset="78%"  stop-color="#c9834b"/>
+      <stop offset="100%" stop-color="#e8b06a"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%"   stop-color="#ffd79a" stop-opacity="0.85"/>
+      <stop offset="45%"  stop-color="#f0a95c" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#f0a95c" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#39494f"/>
+      <stop offset="100%" stop-color="#141a1e"/>
+    </linearGradient>
+
+    <linearGradient id="leak" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0%"   stop-color="#ffb36b" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="#ffd9a8" stop-opacity="0.20"/>
+      <stop offset="55%"  stop-color="#ff9a6b" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ff9a6b" stop-opacity="0"/>
+    </linearGradient>
+
+    <clipPath id="frame">
+      <rect x="0" y="34" width="1000" height="212"/>
+    </clipPath>
+
+    <filter id="soft" x="-30%" y="-400%" width="160%" height="900%">
+      <feGaussianBlur stdDeviation="4.5"/>
+    </filter>
+
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+
+    <style>
+      .drift-a { animation: driftA 46s linear infinite; }
+      .drift-b { animation: driftB 68s linear infinite; }
+      .sun     { animation: breathe 7s ease-in-out infinite; transform-origin: 762px 168px; }
+      .dashes  { animation: rush 1.15s linear infinite; }
+      .rider   { animation: bob 2.4s ease-in-out infinite; transform-origin: 520px 226px; }
+      .leak    { animation: sweep 11s ease-in-out infinite; }
+      .twinkle { animation: twinkle 3.4s ease-in-out infinite; }
+      .bird    { animation: fly 24s linear infinite; }
+      .cursor  { animation: blink 1.05s step-end infinite; }
+
+      .ch { opacity: 0; animation: rise 0.85s cubic-bezier(.2,.7,.3,1) forwards; }
+      .c1 { animation-delay: .25s } .c2 { animation-delay: .40s }
+      .c3 { animation-delay: .55s } .c4 { animation-delay: .70s }
+      .c5 { animation-delay: .85s }
+      .sub  { opacity: 0; animation: rise 1s ease-out 1.15s forwards; }
+      .line { opacity: 0; animation: rise 1s ease-out 1.45s forwards; }
+      .tag  { opacity: 0; animation: rise .8s ease-out .1s forwards; }
+
+      @keyframes driftA  { to { transform: translateX(-160px); } }
+      @keyframes driftB  { to { transform: translateX(-240px); } }
+      @keyframes breathe { 0%,100% { transform: scale(1); opacity:.95 } 50% { transform: scale(1.045); opacity:1 } }
+      @keyframes rush    { to { stroke-dashoffset: -56; } }
+      @keyframes bob     { 0%,100% { transform: translateY(0) rotate(0deg) } 50% { transform: translateY(-2.5px) rotate(-1.2deg) } }
+      @keyframes sweep   { 0%,100% { transform: translateX(-1100px) } 50% { transform: translateX(1100px) } }
+      @keyframes twinkle { 0%,100% { opacity: .25 } 50% { opacity: .9 } }
+      @keyframes fly     { from { transform: translate(0,0) } to { transform: translate(-620px,-26px) } }
+      @keyframes blink   { 0%,49% { opacity: 1 } 50%,100% { opacity: 0 } }
+      @keyframes rise    { from { opacity: 0; transform: translateY(9px) } to { opacity: 1; transform: translateY(0) } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .drift-a,.drift-b,.sun,.dashes,.rider,.leak,.twinkle,.bird,.cursor,.ch,.sub,.line,.tag {
+          animation: none; opacity: 1;
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="1000" height="280" fill="#0b0f13"/>
+
+  <!-- ── 底片画面 ───────────────────────────────────────── -->
+  <g clip-path="url(#frame)">
+    <rect x="0" y="34" width="1000" height="212" fill="url(#sky)"/>
+
+    <!-- 星 -->
+    <g fill="#dfe9f0">
+      <circle class="twinkle" cx="92"  cy="62"  r="1.4" style="animation-delay:0s"/>
+      <circle class="twinkle" cx="168" cy="94"  r="1.1" style="animation-delay:.7s"/>
+      <circle class="twinkle" cx="246" cy="55"  r="1.5" style="animation-delay:1.4s"/>
+      <circle class="twinkle" cx="330" cy="88"  r="1"   style="animation-delay:2.1s"/>
+      <circle class="twinkle" cx="452" cy="60"  r="1.3" style="animation-delay:.35s"/>
+      <circle class="twinkle" cx="588" cy="78"  r="1"   style="animation-delay:1.8s"/>
+      <circle class="twinkle" cx="905" cy="66"  r="1.2" style="animation-delay:2.6s"/>
+    </g>
+
+    <!-- 太阳 -->
+    <g class="sun">
+      <circle cx="762" cy="168" r="130" fill="url(#sunGlow)"/>
+      <circle cx="762" cy="168" r="47"  fill="#f6c37c"/>
+      <circle cx="762" cy="168" r="47"  fill="#ffe3b4" opacity=".45"/>
+    </g>
+
+    <!-- 云带 -->
+    <g class="drift-b" opacity=".16" fill="#dce9ef" filter="url(#soft)">
+      <rect x="120"  y="112" width="210" height="5" rx="2.5"/>
+      <rect x="400"  y="128" width="150" height="4" rx="2"/>
+      <rect x="620"  y="104" width="260" height="5" rx="2.5"/>
+      <rect x="980"  y="120" width="200" height="4" rx="2"/>
+      <rect x="1240" y="112" width="210" height="5" rx="2.5"/>
+    </g>
+
+    <!-- 远山 -->
+    <g class="drift-b" opacity=".55">
+      <polygon points="-60,196 90,132 190,170 300,118 430,196" fill="#20414f"/>
+      <polygon points="380,196 500,140 590,176 700,130 820,196" fill="#20414f"/>
+      <polygon points="800,196 920,140 1010,176 1120,130 1240,196" fill="#20414f"/>
+    </g>
+
+    <!-- 近山 -->
+    <g class="drift-a">
+      <polygon points="-80,206 60,150 150,182 260,140 360,186 470,206" fill="#16303c"/>
+      <polygon points="430,206 540,158 640,192 760,148 880,206" fill="#16303c"/>
+      <polygon points="850,206 960,158 1060,192 1180,148 1300,206" fill="#16303c"/>
+      <polygon points="60,150 92,163 74,166" fill="#cfe3e8" opacity=".8"/>
+      <polygon points="260,140 288,152 272,155" fill="#cfe3e8" opacity=".8"/>
+      <polygon points="760,148 788,160 772,163" fill="#cfe3e8" opacity=".8"/>
+    </g>
+
+    <!-- 地面与公路 -->
+    <rect x="0" y="188" width="1000" height="58" fill="#0f2028"/>
+    <polygon points="700,188 900,246 180,246" fill="url(#road)"/>
+    <polygon points="700,188 706,188 900,246 880,246" fill="#4d5f66" opacity=".5"/>
+    <polygon points="694,188 700,188 200,246 180,246" fill="#4d5f66" opacity=".5"/>
+    <path class="dashes" d="M700 190 L540 246" stroke="#f3e3c6" stroke-width="5"
+          stroke-dasharray="12 16" stroke-linecap="round" opacity=".8" fill="none"/>
+
+    <!-- 长板骑手 -->
+    <g class="rider" fill="#080d10">
+      <path d="M498 226 h44 a2 2 0 0 1 0 4 h-44 a2 2 0 0 1 0-4 z"/>
+      <circle cx="506" cy="232" r="2.6"/><circle cx="534" cy="232" r="2.6"/>
+      <path d="M512 226 l4 -13 l7 -3 l3 -9 l5 -2 l1 5 l-4 3 l-2 9 l-6 3 l-2 7 z"/>
+      <circle cx="533" cy="196" r="4.6"/>
+      <path d="M530 202 l-13 -6 l-2 4 l13 7 z"/>
+      <path d="M536 202 l14 -3 l1 4 l-14 4 z"/>
+    </g>
+
+    <!-- 飞鸟 -->
+    <g class="bird" stroke="#0d1b22" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".7">
+      <path d="M880 96 l7 -5 l7 5"/>
+      <path d="M912 84 l6 -4 l6 4"/>
+    </g>
+
+    <!-- 漏光 -->
+    <rect class="leak" x="0" y="34" width="420" height="212" fill="url(#leak)"/>
+    <!-- 颗粒 -->
+    <rect x="0" y="34" width="1000" height="212" filter="url(#grain)" opacity=".055"/>
+  </g>
+
+  <!-- ── 文字 ──────────────────────────────────────────── -->
+  <g font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+    <g class="ch c1"><text x="62"  y="152" font-size="44" font-weight="700" fill="#f5ead6">白</text></g>
+    <g class="ch c2"><text x="110" y="152" font-size="44" font-weight="700" fill="#f5ead6">日</text></g>
+    <g class="ch c3"><text x="158" y="152" font-size="44" font-weight="700" fill="#f5ead6">梦</text></g>
+    <g class="ch c4"><text x="206" y="152" font-size="44" font-weight="700" fill="#f5ead6">想</text></g>
+    <g class="ch c5"><text x="254" y="152" font-size="44" font-weight="700" fill="#f5ead6">家</text></g>
+  </g>
+
+  <g font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+    <text class="sub"  x="64" y="180" font-size="13.5" fill="#e3b276" letter-spacing="3.4">THE SECRET LIFE OF PathGao</text>
+    <text class="line" x="64" y="212" font-size="13" fill="#b9cdd4">$ 睡觉 · 做梦 · 相爱 · 饿了就去吃 —— 一个碳基的人</text>
+    <rect class="cursor" x="64" y="222" width="9" height="2.5" fill="#e3b276" opacity="0"/>
+    <text class="tag" x="920" y="60" font-size="12" fill="#f0dcb8" letter-spacing="1.6" text-anchor="end">NEG. 25</text>
+  </g>
+
+  <!-- ── 齿孔片基 ──────────────────────────────────────── -->
+  <g fill="#12181d">
+    <rect x="0" y="0"   width="1000" height="34"/>
+    <rect x="0" y="246" width="1000" height="34"/>
+  </g>
+  <g fill="#e9e3d6" opacity=".82">
+    <rect x="14"  y="10" width="22" height="14" rx="3"/><rect x="14"  y="256" width="22" height="14" rx="3"/>
+    <rect x="62"  y="10" width="22" height="14" rx="3"/><rect x="62"  y="256" width="22" height="14" rx="3"/>
+    <rect x="110" y="10" width="22" height="14" rx="3"/><rect x="110" y="256" width="22" height="14" rx="3"/>
+    <rect x="158" y="10" width="22" height="14" rx="3"/><rect x="158" y="256" width="22" height="14" rx="3"/>
+    <rect x="206" y="10" width="22" height="14" rx="3"/><rect x="206" y="256" width="22" height="14" rx="3"/>
+    <rect x="254" y="10" width="22" height="14" rx="3"/><rect x="254" y="256" width="22" height="14" rx="3"/>
+    <rect x="302" y="10" width="22" height="14" rx="3"/><rect x="302" y="256" width="22" height="14" rx="3"/>
+    <rect x="350" y="10" width="22" height="14" rx="3"/><rect x="350" y="256" width="22" height="14" rx="3"/>
+    <rect x="398" y="10" width="22" height="14" rx="3"/><rect x="398" y="256" width="22" height="14" rx="3"/>
+    <rect x="446" y="10" width="22" height="14" rx="3"/><rect x="446" y="256" width="22" height="14" rx="3"/>
+    <rect x="494" y="10" width="22" height="14" rx="3"/><rect x="494" y="256" width="22" height="14" rx="3"/>
+    <rect x="542" y="10" width="22" height="14" rx="3"/><rect x="542" y="256" width="22" height="14" rx="3"/>
+    <rect x="590" y="10" width="22" height="14" rx="3"/><rect x="590" y="256" width="22" height="14" rx="3"/>
+    <rect x="638" y="10" width="22" height="14" rx="3"/><rect x="638" y="256" width="22" height="14" rx="3"/>
+    <rect x="686" y="10" width="22" height="14" rx="3"/><rect x="686" y="256" width="22" height="14" rx="3"/>
+    <rect x="734" y="10" width="22" height="14" rx="3"/><rect x="734" y="256" width="22" height="14" rx="3"/>
+    <rect x="782" y="10" width="22" height="14" rx="3"/><rect x="782" y="256" width="22" height="14" rx="3"/>
+    <rect x="830" y="10" width="22" height="14" rx="3"/><rect x="830" y="256" width="22" height="14" rx="3"/>
+    <rect x="878" y="10" width="22" height="14" rx="3"/><rect x="878" y="256" width="22" height="14" rx="3"/>
+    <rect x="926" y="10" width="22" height="14" rx="3"/><rect x="926" y="256" width="22" height="14" rx="3"/>
+    <rect x="974" y="10" width="22" height="14" rx="3"/><rect x="974" y="256" width="22" height="14" rx="3"/>
+  </g>
+</svg>
