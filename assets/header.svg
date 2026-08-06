@@ -109,11 +109,18 @@
     <!-- 圆冠树 / 针叶树 -->
     <g id="tree1"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#2f4a2c"/><ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#3f8a45"/><ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#4fa353"/></g>
     <g id="tree2"><rect x="-1.4" y="-8" width="2.8" height="9" fill="#2b452a"/><path d="M0 -30 L8 -12 L-8 -12 Z" fill="#367a3f"/><path d="M0 -24 L9.5 -6 L-9.5 -6 Z" fill="#45964c"/></g>
-    <!-- 秋黄 -->
-    <g id="tree3"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#4a3a22"/>
-      <ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#cf9128"/>
-      <ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#e8b63c"/>
-      <circle cx="5.5" cy="-11.5" r="2.6" fill="#b86a1c"/></g>
+    <!-- 黄花 -->
+    <g id="tree3">
+      <path d="M0 1 L0.4 -8 M0.2 -5.5 L-3.8 -9.6 M0 -7 L3.6 -10.6" stroke="#463628"
+            stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-4.2" cy="-12.4" rx="5.8" ry="4.8" fill="#7ea63c"/>
+      <ellipse cx="4.4"  cy="-11.8" rx="5.2" ry="4.4" fill="#7ea63c"/>
+      <ellipse cx="0"    cy="-16.4" rx="7.2" ry="5.6" fill="#efc93f"/>
+      <ellipse cx="-4"   cy="-14.6" rx="4.8" ry="3.9" fill="#f7db66"/>
+      <ellipse cx="4.6"  cy="-14.8" rx="4.4" ry="3.6" fill="#f7db66"/>
+      <g fill="#ffeda0"><circle cx="-1.8" cy="-18.6" r="1.1"/><circle cx="3.4" cy="-17.6" r="1"/>
+        <circle cx="-5.6" cy="-16" r=".9"/></g>
+    </g>
     <!-- 樱花 -->
     <g id="tree4">
       <path d="M0 1 L-0.5 -9 M-0.3 -6 L-4.2 -10.5 M0 -7.5 L3.8 -11.5" stroke="#4a3630"
@@ -131,9 +138,10 @@
     <g id="tree5"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#2f4a2c"/>
       <ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#377a3d"/>
       <ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#469a49"/>
-      <g fill="#a3203f"><circle cx="4.5" cy="-11.5" r="1.9"/><circle cx="-5.5" cy="-13" r="1.7"/>
-        <circle cx="1" cy="-19.5" r="1.6"/><circle cx="7.5" cy="-16.5" r="1.5"/>
-        <circle cx="-2" cy="-9.5" r="1.6"/><circle cx="-8" cy="-17" r="1.4"/></g></g>
+      <g fill="#9c1e3c"><circle cx="5.4" cy="-10.8" r="2"/><circle cx="7.8" cy="-13.2" r="1.4"/>
+        <circle cx="-5.6" cy="-16.8" r="1.7"/><circle cx="-7.2" cy="-14.6" r="1.1"/>
+        <circle cx="-1.4" cy="-9.6" r="1.3"/></g>
+      <circle cx="6.6" cy="-12" r=".7" fill="#c94a63" opacity=".8"/></g>
 
   </defs>
 
@@ -335,7 +343,7 @@
           <animate attributeName="opacity" values="0;.9;.9;0" dur="11s" repeatCount="indefinite"/>
           <animateTransform attributeName="transform" type="rotate" from="0 742 150" to="360 742 150" dur="3.4s" repeatCount="indefinite"/></ellipse></g>
       <g><animateTransform attributeName="transform" type="translate" values="0 0;-12 30;6 58;-8 90" dur="14s" repeatCount="indefinite"/>
-        <ellipse cx="838" cy="144" rx="2.8" ry="1.6" fill="#e8b63c">
+        <ellipse cx="838" cy="144" rx="2.8" ry="1.6" fill="#f2d258">
           <animate attributeName="opacity" values="0;.85;.85;0" dur="14s" repeatCount="indefinite"/>
           <animateTransform attributeName="transform" type="rotate" from="360 838 144" to="0 838 144" dur="4.1s" repeatCount="indefinite"/></ellipse></g>
       <g><animateTransform attributeName="transform" type="translate" values="0 0;-10 26;8 56;-6 88" dur="10.5s" repeatCount="indefinite"/>
@@ -351,7 +359,7 @@
           <animate attributeName="opacity" values="0;.9;.9;0" dur="9.5s" repeatCount="indefinite"/>
           <animateTransform attributeName="transform" type="rotate" from="0 930 138" to="360 930 138" dur="2.9s" repeatCount="indefinite"/></ellipse></g>
       <g><animateTransform attributeName="transform" type="translate" values="0 0;-14 32;4 64;-10 96" dur="12.5s" repeatCount="indefinite"/>
-        <ellipse cx="672" cy="146" rx="2.6" ry="1.5" fill="#cf9128">
+        <ellipse cx="672" cy="146" rx="2.6" ry="1.5" fill="#f0cc4e">
           <animate attributeName="opacity" values="0;.8;.8;0" dur="12.5s" repeatCount="indefinite"/>
           <animateTransform attributeName="transform" type="rotate" from="360 672 146" to="0 672 146" dur="3.7s" repeatCount="indefinite"/></ellipse></g>
     </g>
@@ -377,17 +385,30 @@
           <circle cx="-17" cy="0" r="8.5"/><circle cx="17" cy="0" r="8.5"/>
           <path d="M-17 0 L-2 -13 L11 -13 L17 0 M-2 -13 L-3 -1 M11 -13 L13.5 -16"/>
           <path d="M8 -16 L15 -16"/>
+          <circle cx="-3" cy="-1" r="4.2" stroke-width="1.3"/>
+          <circle cx="-17" cy="0" r="2" stroke-width="1.1"/>
+          <path d="M-17 -2 L-3.4 -5.1 M-17 2 L-3.4 3.1" stroke-width="1"/>
+        </g>
+        <!-- 远侧曲柄与踏板 -->
+        <g opacity=".5" stroke="#05080f" fill="none" stroke-linecap="round">
+          <path d="M-3 -1 L-7 -1" stroke-width="1.8">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-3 -1 L-7 -1; M-3 -1 L-3 -5; M-3 -1 L1 -1; M-3 -1 L-3 3; M-3 -1 L-7 -1"/>
+          </path>
+          <path d="M-8.6 -1 L-5.4 -1" stroke-width="1.9">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-8.6 -1 L-5.4 -1; M-4.6 -5 L-1.4 -5; M-0.6 -1 L2.6 -1; M-4.6 3 L-1.4 3; M-8.6 -1 L-5.4 -1"/>
+          </path>
         </g>
         <!-- 远侧的腿（错半拍，做出纵深） -->
-        <path d="M-4 -14 L-1 -8 L-7 -1" stroke="#05080f" stroke-width="2.2" fill="none"
-              stroke-linecap="round" stroke-linejoin="round" opacity=".5">
-          <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
-            M-4 -14 L-1 -8 L-7 -1;
-            M-4 -14 L1 -10 L-3 -5;
-            M-4 -14 L2 -8 L1 -1;
-            M-4 -14 L0 -7 L-3 3;
-            M-4 -14 L-1 -8 L-7 -1"/>
-        </path>
+        <g opacity=".5" stroke="#05080f" fill="none" stroke-linecap="round">
+          <path d="M-4 -14 L-1 -8" stroke-width="3.4">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-4 -14 L-1 -8; M-4 -14 L1 -10; M-4 -14 L2 -8; M-4 -14 L0 -7; M-4 -14 L-1 -8"/></path>
+          <path d="M-1 -8 L-7 -1" stroke-width="2.2">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-1 -8 L-7 -1; M1 -10 L-3 -5; M2 -8 L1 -1; M0 -7 L-3 3; M-1 -8 L-7 -1"/></path>
+        </g>
         <!-- 挎包 -->
         <path d="M-15 -24 q 9 -4 13 1 l-1 10 q -8 3 -13 -1 z"/>
         <!-- 猫：头、耳、口鼻、尾巴 -->
@@ -402,20 +423,33 @@
           <path d="M-6.4 -30.3 L-5 -35.8 L-9.6 -32.1 Z"/>
         </g>
         <!-- 近侧的腿 -->
-        <path d="M-4 -14 L2 -8 L1 -1" stroke="#05080f" stroke-width="2.9" fill="none"
-              stroke-linecap="round" stroke-linejoin="round">
-          <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
-            M-4 -14 L2 -8 L1 -1;
-            M-4 -14 L0 -7 L-3 3;
-            M-4 -14 L-1 -8 L-7 -1;
-            M-4 -14 L1 -10 L-3 -5;
-            M-4 -14 L2 -8 L1 -1"/>
-        </path>
+        <g stroke="#05080f" fill="none" stroke-linecap="round">
+          <path d="M-4.5 -13.5 L2 -8" stroke-width="4.4">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-4.5 -13.5 L2 -8; M-4.5 -13.5 L0 -7; M-4.5 -13.5 L-1 -8; M-4.5 -13.5 L1 -10; M-4.5 -13.5 L2 -8"/></path>
+          <path d="M2 -8 L1 -1" stroke-width="2.7">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M2 -8 L1 -1; M0 -7 L-3 3; M-1 -8 L-7 -1; M1 -10 L-3 -5; M2 -8 L1 -1"/></path>
+        </g>
+        <!-- 近侧曲柄与踏板 -->
+        <g stroke="#05080f" fill="none" stroke-linecap="round">
+          <path d="M-3 -1 L1 -1" stroke-width="2">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-3 -1 L1 -1; M-3 -1 L-3 3; M-3 -1 L-7 -1; M-3 -1 L-3 -5; M-3 -1 L1 -1"/>
+          </path>
+          <path d="M-0.6 -1 L2.6 -1" stroke-width="2.2">
+            <animate attributeName="d" dur=".85s" repeatCount="indefinite" values="
+              M-0.6 -1 L2.6 -1; M-4.6 3 L-1.4 3; M-8.6 -1 L-5.4 -1; M-4.6 -5 L-1.4 -5; M-0.6 -1 L2.6 -1"/>
+          </path>
+        </g>
         <!-- 躯干 / 手臂 / 头 -->
-        <path d="M-4 -15 L7 -25.5" stroke="#05080f" stroke-width="5.2" fill="none" stroke-linecap="round"/>
-        <path d="M7 -25.5 L13.5 -16.5" stroke="#05080f" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-        <circle cx="10.5" cy="-29" r="4.4"/>
-        <path d="M7 -30.9 q -2.8 -0.5 -1.9 -2.1 q 2.3 -1.5 5.5 -0.6 z"/>
+        <path d="M-7 -11.6 C -9.2 -18.2, -3.6 -24.6, 5 -27.3 L 9.4 -25.3
+                 C 5.2 -21.8, 1.2 -16.4, -1 -10.8 Z"/>
+        <path d="M6.6 -26.4 L9.4 -28.4" stroke="#05080f" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+        <path d="M7.4 -25.4 L11.6 -21 L13.8 -16.4" stroke="#05080f" stroke-width="2.8" fill="none"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="10.8" cy="-29.6" r="4.5"/>
+        <path d="M7.4 -31.4 q -2.6 -0.6 -1.7 -2 q 2.2 -1.4 5.2 -0.6 z"/>
       </g>
     </g>
 
