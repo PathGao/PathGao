@@ -9,9 +9,10 @@
       <stop offset="31%"  stop-color="#453e6a"/>
       <stop offset="43%"  stop-color="#8d5f76"/>
       <stop offset="54%"  stop-color="#d98a63"/>
-      <stop offset="62%"  stop-color="#f0be82"/>
-      <stop offset="78%"  stop-color="#f6dc98"/>
-      <stop offset="100%" stop-color="#f7e3a1"/>
+      <stop offset="56%"  stop-color="#eec48c"/>
+      <stop offset="67%"  stop-color="#8cc4e8"/>
+      <stop offset="82%"  stop-color="#3f97d6"/>
+      <stop offset="100%" stop-color="#2a7fc4"/>
     </linearGradient>
 
     <linearGradient id="zenith" gradientUnits="userSpaceOnUse" x1="0" y1="34" x2="760" y2="200">
@@ -23,8 +24,8 @@
       <stop offset="0%"   stop-color="#2a3054"/>
       <stop offset="35%"  stop-color="#4b4573"/>
       <stop offset="60%"  stop-color="#9a7f92"/>
-      <stop offset="80%"  stop-color="#cdae7c"/>
-      <stop offset="100%" stop-color="#dcc491"/>
+      <stop offset="80%"  stop-color="#9dc2d6"/>
+      <stop offset="100%" stop-color="#bcdcea"/>
     </linearGradient>
 
     <linearGradient id="ridgeNear" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
@@ -39,8 +40,8 @@
       <stop offset="0%"   stop-color="#0d1226"/>
       <stop offset="30%"  stop-color="#1a2340"/>
       <stop offset="52%"  stop-color="#5a4a58"/>
-      <stop offset="72%"  stop-color="#a89463"/>
-      <stop offset="100%" stop-color="#d8c383"/>
+      <stop offset="72%"  stop-color="#4e93b8"/>
+      <stop offset="100%" stop-color="#7fc4de"/>
     </linearGradient>
 
     <linearGradient id="bankG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
@@ -51,6 +52,16 @@
       <stop offset="100%" stop-color="#93bd50"/>
     </linearGradient>
 
+    <linearGradient id="haze" gradientUnits="userSpaceOnUse" x1="0" y1="192" x2="0" y2="62">
+      <stop offset="0%"   stop-color="#eaf6ff" stop-opacity=".62"/>
+      <stop offset="55%"  stop-color="#eaf6ff" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#eaf6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mfade" gradientUnits="userSpaceOnUse" x1="470" y1="0" x2="740" y2="0">
+      <stop offset="0%" stop-color="#000000"/><stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <mask id="rightOnly"><rect x="0" y="34" width="1000" height="212" fill="url(#mfade)"/></mask>
+
     <linearGradient id="scrim" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0">
       <stop offset="0%"   stop-color="#080d20" stop-opacity=".32"/>
       <stop offset="100%" stop-color="#080d20" stop-opacity="0"/>
@@ -59,6 +70,19 @@
     <radialGradient id="lampGlow"><stop offset="0%" stop-color="#ffd9a0" stop-opacity=".8"/><stop offset="100%" stop-color="#ffd9a0" stop-opacity="0"/></radialGradient>
     <radialGradient id="sunGlow"><stop offset="0%" stop-color="#ffffff" stop-opacity="1"/><stop offset="22%" stop-color="#fff6da" stop-opacity=".8"/><stop offset="52%" stop-color="#ffdf9d" stop-opacity=".38"/><stop offset="100%" stop-color="#ffdf9d" stop-opacity="0"/></radialGradient>
     <radialGradient id="moonGlow"><stop offset="0%" stop-color="#dce6f7" stop-opacity=".5"/><stop offset="100%" stop-color="#dce6f7" stop-opacity="0"/></radialGradient>
+
+    <g id="gullA"><path d="M-9 0 q 4.6 -5.4 9 -0.6 q 4.4 -5 9 0.4" fill="none" stroke="#2c4a63"
+        stroke-width="1.7" stroke-linecap="round">
+      <animate attributeName="d" dur="1.3s" repeatCount="indefinite" values="
+        M-9 0 q 4.6 -5.4 9 -0.6 q 4.4 -5 9 0.4;
+        M-9 -3.4 q 4.6 -1.4 9 -0.6 q 4.4 -1 9 -2.8;
+        M-9 0 q 4.6 -5.4 9 -0.6 q 4.4 -5 9 0.4"/></path></g>
+    <g id="gullB"><path d="M-9 0 q 4.6 -5.4 9 -0.6 q 4.4 -5 9 0.4" fill="none" stroke="#2c4a63"
+        stroke-width="1.7" stroke-linecap="round">
+      <animate attributeName="d" dur="1.75s" repeatCount="indefinite" values="
+        M-9 -3.4 q 4.6 -1.4 9 -0.6 q 4.4 -1 9 -2.8;
+        M-9 0 q 4.6 -5.4 9 -0.6 q 4.4 -5 9 0.4;
+        M-9 -3.4 q 4.6 -1.4 9 -0.6 q 4.4 -1 9 -2.8"/></path></g>
 
     <clipPath id="frame"><rect x="0" y="34" width="1000" height="212"/></clipPath>
     <filter id="soft" x="-40%" y="-300%" width="180%" height="700%"><feGaussianBlur stdDeviation="5"/></filter>
@@ -80,6 +104,7 @@
   <g clip-path="url(#frame)">
     <rect x="0" y="34" width="1000" height="212" fill="url(#sky)"/>
     <rect x="0" y="34" width="1000" height="212" fill="url(#zenith)"/>
+    <rect x="0" y="34" width="1000" height="212" fill="url(#haze)" mask="url(#rightOnly)"/>
 
     <!-- 星（只在左边的夜里） -->
     <g fill="#e6ecf5">
@@ -101,15 +126,15 @@
 
     <!-- 太阳（昼的那头） -->
     <g>
-      <circle cx="806" cy="80" r="100" fill="url(#sunGlow)">
-        <animate attributeName="r" values="100;112;100" dur="8s" repeatCount="indefinite"/>
+      <circle cx="806" cy="80" r="74" fill="url(#sunGlow)">
+        <animate attributeName="r" values="74;82;74" dur="8s" repeatCount="indefinite"/>
       </circle>
       <circle cx="806" cy="80" r="27" fill="#fffbe8"/>
       <circle cx="806" cy="80" r="19" fill="#ffffff"/>
     </g>
 
     <!-- 放射光束 -->
-    <g fill="#fff4cf" opacity=".13">
+    <g fill="#fffaea" opacity=".05">
       <animateTransform attributeName="transform" type="rotate" from="0 806 80" to="360 806 80" dur="140s" repeatCount="indefinite"/>
       <path d="M806 80 L1000 44 L1000 92 Z"/>
       <path d="M806 80 L980 200 L936 232 Z"/>
@@ -126,7 +151,7 @@
       <ellipse cx="550" cy="104" rx="105" ry="3.4"/><ellipse cx="740" cy="126" rx="80" ry="2.8"/>
       <ellipse cx="1010" cy="104" rx="105" ry="3.4"/><ellipse cx="1200" cy="126" rx="80" ry="2.8"/>
     </g>
-    <g opacity=".82" fill="#fff8e4" filter="url(#soft)">
+    <g opacity=".9" fill="#ffffff" filter="url(#soft)">
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-380 0" dur="96s" repeatCount="indefinite"/>
       <g><ellipse cx="700" cy="88" rx="30" ry="11"/><ellipse cx="722" cy="82" rx="22" ry="14"/><ellipse cx="744" cy="90" rx="26" ry="10"/></g>
       <g><ellipse cx="900" cy="118" rx="26" ry="9"/><ellipse cx="918" cy="112" rx="19" ry="12"/><ellipse cx="936" cy="119" rx="22" ry="8"/></g>
@@ -252,9 +277,14 @@
     </g>
 
     <!-- 白天的鸟 -->
-    <g stroke="#6b5330" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".6">
+    <g opacity=".5">
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-560 -30" dur="40s" repeatCount="indefinite"/>
-      <path d="M880 106 l7 -5 l7 5"/><path d="M910 96 l6 -4 l6 4"/><path d="M1140 112 l7 -5 l7 5"/><path d="M1170 102 l6 -4 l6 4"/>
+      <use xlink:href="#gullA" transform="translate(884 104) scale(.85)"/>
+      <use xlink:href="#gullB" transform="translate(916 94) scale(.62)"/>
+      <use xlink:href="#gullA" transform="translate(946 110) scale(.5)"/>
+      <use xlink:href="#gullB" transform="translate(1444 104) scale(.85)"/>
+      <use xlink:href="#gullA" transform="translate(1476 94) scale(.62)"/>
+      <use xlink:href="#gullB" transform="translate(1506 110) scale(.5)"/>
     </g>
 
     <!-- 骑车的人 + 包里的猫：从夜里的城骑向白天的旷野 -->
@@ -326,7 +356,7 @@
     <rect x="64" y="182" width="9" height="2.5" fill="#e8b48c">
       <animate attributeName="opacity" values="1;1;0;0" dur="1.05s" calcMode="discrete" repeatCount="indefinite"/>
     </rect>
-    <text x="936" y="60" font-size="12" fill="#6b4c1c" letter-spacing="1.6" text-anchor="end" opacity=".75">Sep.99</text>
+    <text x="936" y="60" font-size="12" fill="#12496e" letter-spacing="1.6" text-anchor="end" opacity=".75">Sep.99</text>
   </g>
 
   <!-- 齿孔片基 -->
