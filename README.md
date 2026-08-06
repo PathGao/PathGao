@@ -24,4 +24,8 @@
 - **[vorssaint-utils](https://github.com/PathGao/vorssaint-utils)** // macOS 的瑞士军刀
 - 新奇的项目永远不会停止冒出来
 
+### Thinking-Out-Loud
+
+- **[我的工程哲学](./engineering-philosophy.md)** // 一把尺子量四件事：学、建、修、讲
+
 <sub>致敬《The Secret Life of Walter Mitty》。</sub>
