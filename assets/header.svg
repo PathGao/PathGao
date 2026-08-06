@@ -7,12 +7,15 @@
       <stop offset="0%"   stop-color="#0f1631"/>
       <stop offset="17%"  stop-color="#1d2446"/>
       <stop offset="31%"  stop-color="#453e6a"/>
-      <stop offset="43%"  stop-color="#8d5f76"/>
-      <stop offset="54%"  stop-color="#d98a63"/>
-      <stop offset="56%"  stop-color="#eec48c"/>
-      <stop offset="67%"  stop-color="#8cc4e8"/>
-      <stop offset="82%"  stop-color="#3f97d6"/>
-      <stop offset="100%" stop-color="#2a7fc4"/>
+      <stop offset="40%"  stop-color="#7d5580"/>
+      <stop offset="47%"  stop-color="#b8677c"/>
+      <stop offset="53%"  stop-color="#e5875a"/>
+      <stop offset="58%"  stop-color="#f8b775"/>
+      <stop offset="63%"  stop-color="#fdda9e"/>
+      <stop offset="68%"  stop-color="#eef2ea"/>
+      <stop offset="74%"  stop-color="#b2e0f7"/>
+      <stop offset="85%"  stop-color="#4fb0ea"/>
+      <stop offset="100%" stop-color="#1f8fe0"/>
     </linearGradient>
 
     <linearGradient id="zenith" gradientUnits="userSpaceOnUse" x1="0" y1="34" x2="760" y2="200">
@@ -24,32 +27,32 @@
       <stop offset="0%"   stop-color="#2a3054"/>
       <stop offset="35%"  stop-color="#4b4573"/>
       <stop offset="60%"  stop-color="#9a7f92"/>
-      <stop offset="80%"  stop-color="#9dc2d6"/>
-      <stop offset="100%" stop-color="#bcdcea"/>
+      <stop offset="80%"  stop-color="#a2cee6"/>
+      <stop offset="100%" stop-color="#c6e8f7"/>
     </linearGradient>
 
     <linearGradient id="ridgeNear" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
       <stop offset="0%"   stop-color="#141a2f"/>
       <stop offset="34%"  stop-color="#2c2d4c"/>
       <stop offset="52%"  stop-color="#4a4553"/>
-      <stop offset="70%"  stop-color="#5f8a45"/>
-      <stop offset="100%" stop-color="#93bf55"/>
+      <stop offset="70%"  stop-color="#5d9a44"/>
+      <stop offset="100%" stop-color="#9ed155"/>
     </linearGradient>
 
     <linearGradient id="riverG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
       <stop offset="0%"   stop-color="#0d1226"/>
       <stop offset="30%"  stop-color="#1a2340"/>
       <stop offset="52%"  stop-color="#5a4a58"/>
-      <stop offset="72%"  stop-color="#4e93b8"/>
-      <stop offset="100%" stop-color="#7fc4de"/>
+      <stop offset="72%"  stop-color="#3fa8d4"/>
+      <stop offset="100%" stop-color="#79d6ee"/>
     </linearGradient>
 
     <linearGradient id="bankG" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
       <stop offset="0%"   stop-color="#080d1a"/>
       <stop offset="34%"  stop-color="#131a2c"/>
       <stop offset="55%"  stop-color="#2a3630"/>
-      <stop offset="74%"  stop-color="#5c8a3e"/>
-      <stop offset="100%" stop-color="#93bd50"/>
+      <stop offset="74%"  stop-color="#5b9a3c"/>
+      <stop offset="100%" stop-color="#9ed14f"/>
     </linearGradient>
 
     <linearGradient id="haze" gradientUnits="userSpaceOnUse" x1="0" y1="192" x2="0" y2="62">
@@ -95,8 +98,8 @@
     </g>
 
     <!-- 圆冠树 / 针叶树 -->
-    <g id="tree1"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#2f4a2c"/><ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#356b3b"/><ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#3f7f44"/></g>
-    <g id="tree2"><rect x="-1.4" y="-8" width="2.8" height="9" fill="#2b452a"/><path d="M0 -30 L8 -12 L-8 -12 Z" fill="#2d5f35"/><path d="M0 -24 L9.5 -6 L-9.5 -6 Z" fill="#357038"/></g>
+    <g id="tree1"><rect x="-1.6" y="-9" width="3.2" height="10" fill="#2f4a2c"/><ellipse cx="0" cy="-15" rx="11" ry="9.5" fill="#3f8a45"/><ellipse cx="-3" cy="-18" rx="7" ry="6" fill="#4fa353"/></g>
+    <g id="tree2"><rect x="-1.4" y="-8" width="2.8" height="9" fill="#2b452a"/><path d="M0 -30 L8 -12 L-8 -12 Z" fill="#367a3f"/><path d="M0 -24 L9.5 -6 L-9.5 -6 Z" fill="#45964c"/></g>
   </defs>
 
   <rect width="1000" height="280" fill="#0b0f13"/>
@@ -209,8 +212,8 @@
           fill="url(#ridgeNear)"/>
 
     <!-- 白天那侧的绿丘与树林 -->
-    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 200 L470 200 Z" fill="#5f9440"/>
-    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 174 Q 960 160 900 178 Q 810 206 690 186 Q 580 168 470 192 Z" fill="#aed063" opacity=".6"/>
+    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 200 L470 200 Z" fill="#5aa042"/>
+    <path d="M470 186 Q 580 162 690 180 Q 810 200 900 172 Q 960 154 1020 168 L1020 174 Q 960 160 900 178 Q 810 206 690 186 Q 580 168 470 192 Z" fill="#bce46a" opacity=".65"/>
     <g>
       <use xlink:href="#tree2" x="612" y="182"/><use xlink:href="#tree1" x="646" y="184"/>
       <use xlink:href="#tree2" x="686" y="186"/><use xlink:href="#tree1" x="726" y="188"/>
@@ -265,7 +268,7 @@
     <g><use xlink:href="#lamp" x="176" y="224"/><use xlink:href="#lamp" x="396" y="224"/></g>
 
     <!-- 白天那头的草与花 -->
-    <g stroke="#6cbf63" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".85">
+    <g stroke="#8ada6e" stroke-width="1.6" fill="none" stroke-linecap="round" opacity=".85">
       <path d="M596 244 q 2 -8 6 -11 M604 244 q -1 -7 2 -10 M640 244 q 3 -9 7 -12 M648 244 q -1 -8 2 -11"/>
       <path d="M700 244 q 2 -8 6 -11 M708 244 q -1 -7 2 -10 M760 244 q 3 -9 7 -12 M768 244 q -1 -8 2 -11"/>
       <path d="M830 244 q 2 -8 6 -11 M838 244 q -1 -7 2 -10 M900 244 q 3 -9 7 -12 M908 244 q -1 -8 2 -11"/>
@@ -340,7 +343,7 @@
       </g>
     </g>
 
-    <rect x="0" y="34" width="1000" height="212" filter="url(#grain)" opacity=".045"/>
+    <rect x="0" y="34" width="1000" height="212" filter="url(#grain)" opacity=".028"/>
     <rect x="0" y="34" width="560" height="212" fill="url(#scrim)"/>
   </g>
 
