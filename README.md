@@ -29,13 +29,11 @@
 
 复杂的是理解力，轻盈的是负担。这两样我都要。
 
-<img src="./assets/strip.svg" alt="" width="100%">
-
 ### 正在造的东西
 
 - **[Markpad](https://github.com/PathGao/Markpad)** // Markdown 界的记事本
+- **[3x-ui](https://github.com/MHSanaei/3x-ui)** // Xray 面板，出海那条路的控制台
 - **[vorssaint-utils](https://github.com/PathGao/vorssaint-utils)** // 开源的 macOS 菜单栏工具箱
-- **[tauri](https://github.com/PathGao/tauri)** // 更小、更快、更安全的桌面端
 - 还有几个在打磨，见得了人再放出来
 
 <sub>致敬《The Secret Life of Walter Mitty》。<br>
