@@ -24,7 +24,7 @@
 - **[vorssaint-utils](https://github.com/PathGao/vorssaint-utils)** // macOS 的瑞士军刀
 - 新奇的项目永远不会停止冒出来
 
-### Thinking-Out-Loud
+### 思想是架空与现实的桥梁
 
 - **[我的工程哲学](./engineering-philosophy.md)** // 一把尺子量四件事：学、建、修、讲
 
