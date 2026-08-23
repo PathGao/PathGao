@@ -21,7 +21,7 @@
 ### Shipping-Now
 
 - **[Markpad](https://github.com/PathGao/Markpad)** // Markdown 界的记事本
-- **[Nifro](https://github.com/PathGao/nifro)** // 把浏览器塞进桌面背景
+- **[Nifro](https://github.com/PathGao/nifro)** // 藏在窗口背后的浪漫
 - **[3x-ui](https://github.com/MHSanaei/3x-ui)** // Xray 面板，越过长城的电话线
 - **[vorssaint-utils](https://github.com/PathGao/vorssaint-utils)** // macOS 的瑞士军刀
 - 新奇的项目永远不会停止冒出来
@@ -30,6 +30,6 @@
 
 - **[我的工程哲学](./engineering-philosophy.md)** // 一把尺子量四件事：学、建、修、讲
 
-你我的抽象，让这个疯狂的世界显得格外正常。
+<sub>你我的抽象，让这个疯狂的世界显得格外正常。</sub>
 
 <sub>致敬《The Secret Life of Walter Mitty》。</sub>
