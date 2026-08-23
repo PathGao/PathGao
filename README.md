@@ -30,6 +30,5 @@
 
 - **[我的工程哲学](./engineering-philosophy.md)** // 一把尺子量四件事：学、建、修、讲
 
-<sub>你我的抽象，让这个疯狂的世界显得格外正常。</sub>
-
+<sub>你我的抽象，让这个疯狂的世界显得格外正常。</sub>  
 <sub>致敬《The Secret Life of Walter Mitty》。</sub>
