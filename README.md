@@ -2,10 +2,9 @@
 
 ### 真实智人类
 
-总睡觉，会做梦，浓烈相爱，在深夜饿得想吃点东西。  
-兴奋地雨中起舞，故意做傻事，让自己相信自己是个英雄。  
 好色但乐施，爱财则如命。  
-你我的抽象，让这个疯狂的世界显得格外正常。
+总睡觉，会做梦，浓烈相爱，在深夜饿得想吃点东西。  
+兴奋地雨中起舞，故意做傻事，让自己相信自己是个英雄。
 
 ### 贪婪美食家
 
@@ -22,6 +21,7 @@
 ### Shipping-Now
 
 - **[Markpad](https://github.com/PathGao/Markpad)** // Markdown 界的记事本
+- **[Nifro](https://github.com/PathGao/nifro)** // 把浏览器塞进桌面背景
 - **[3x-ui](https://github.com/MHSanaei/3x-ui)** // Xray 面板，越过长城的电话线
 - **[vorssaint-utils](https://github.com/PathGao/vorssaint-utils)** // macOS 的瑞士军刀
 - 新奇的项目永远不会停止冒出来
@@ -29,5 +29,7 @@
 ### 思想是架空与现实的桥梁
 
 - **[我的工程哲学](./engineering-philosophy.md)** // 一把尺子量四件事：学、建、修、讲
+
+你我的抽象，让这个疯狂的世界显得格外正常。
 
 <sub>致敬《The Secret Life of Walter Mitty》。</sub>
