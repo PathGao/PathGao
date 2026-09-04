@@ -20,11 +20,16 @@
 
 ### Shipping-Now
 
-- **[vorssaint-utils](https://github.com/vorssaint/vorssaint-utils)** // macOS 的瑞士军刀
 - **[Markpad](https://github.com/sftwrdotdev/Markpad)** // Markdown 界的记事本
 - **[Nifro](https://github.com/PathGao/Nifro)** // 藏在窗口背后的浪漫
-- **[3x-ui](https://github.com/MHSanaei/3x-ui)** // Xray 面板，越过长城的电话线
 - 新奇的项目永远不会停止冒出来
+
+### Shipped-Before
+
+- **[vorssaint-utils](https://github.com/vorssaintapp/vorssaint-utils)** // macOS 的瑞士军刀
+- **[3x-ui](https://github.com/MHSanaei/3x-ui)** // Xray 面板，越过长城的电话线
+- **[graphify](https://github.com/Graphify-Labs/graphify)** // 把代码库读成一张能查的图
+- 一起推过一程，然后各自赶路
 
 ### 思想是架空与现实的桥梁
 
