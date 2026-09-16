@@ -1,0 +1,36 @@
+name: Bug report
+description: Report a defect or unexpected behavior
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: One problem per issue. Remove secrets and private data from logs and screenshots.
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest example you can reproduce, or explain if it is intermittent.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Application version
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS version and relevant hardware
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, logs or other evidence
