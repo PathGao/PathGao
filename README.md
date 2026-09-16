@@ -22,6 +22,7 @@
 
 - **[Markpad](https://github.com/sftwrdotdev/Markpad)** // Markdown 界的记事本
 - **[Nifro](https://github.com/PathGao/Nifro)** // 藏在窗口背后的浪漫
+- **[kururu](https://github.com/PathGao/kururu)** // vorssaint修道飞升版
 - 新奇的项目永远不会停止冒出来
 
 ### Reached-the-Shore
