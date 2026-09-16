@@ -1,8 +1,9 @@
 # Personal repository governance
 
-Baseline: **2026-09-16**. Source: [PathGao/governance](https://github.com/PathGao/PathGao/tree/main/governance).
+Baseline: **2026-09-16, Markpad labels**. Source: [PathGao/governance](https://github.com/PathGao/PathGao/tree/main/governance).
 Adoption is explicit and manual. Files here are source material, outside the
-profile repository's active `.github` directory. They do not configure GitHub by themselves.
+profile repository's active `.github` directory. PathGao itself adopts the shared
+settings and labels through the API; storing templates here does not apply them.
 
 ## Policy
 
@@ -17,10 +18,17 @@ profile repository's active `.github` directory. They do not configure GitHub by
 - Use the short PR template. `Closes`/`Fixes` closes completed issues on merge.
   Partial work uses a normal reference and names the remainder. No release-status
   labels, confirmation timer, automatic issue comments or inactivity closure.
-- Keep shared label meanings consistent. `question` is a usage question;
-  `needs info` waits for reporter details; `awaiting decision` waits for a
-  maintainer decision; `planned` means accepted. Other labels classify type or
-  resolution. Project labels may extend this set.
+- Use Markpad's label names, colors and descriptions as recorded on 2026-09-16,
+  excluding `wontfix` and its JavaScript/Rust language labels. `question` is a
+  usage question; `needs info` waits for a reporter; `awaiting decision` waits
+  for a maintainer decision; `planned` means accepted. `Final_Check_Request`
+  is a manual marker for work that still needs confirmation or is incomplete.
+  Keep those issues open with normal references until the work is complete.
+  There is no bot or mandatory `Refs` syntax. Project labels extend this set.
+- Remove unused default labels `wontfix`, `good first issue`, `help wanted`,
+  `invalid` and `duplicate` during adoption. Inspect open and closed issues/PRs
+  before deleting; preserve meaningful project labels. A duplicate can be
+  closed with a link, and a declined request with an explanation.
 - Enable private vulnerability reporting and document the current reporting
   channel. Do not copy another project's signing claims, sponsor identity,
   license or promised response time.
@@ -75,6 +83,14 @@ profile repository's active `.github` directory. They do not configure GitHub by
    ./Tools/sync-labels.sh "$target_repo" --apply
    ```
 
+   The preview only covers declared labels; zero changes does not mean default
+   labels have been removed. Check the five retired names above separately.
+   If unused, explicitly delete each approved label, for example:
+
+   ```sh
+   gh label delete "wontfix" --repo "$target_repo" --yes
+   ```
+
 4. Apply repository settings and enable private reporting:
 
    ```sh
@@ -100,7 +116,24 @@ review changes before applying them. Merge settings, labels and rulesets need
 API application as well as committed files. No bot, cross-repository token or
 scheduled synchronization is required.
 
-The first adoption is Nifro and kururu. Nifro keeps its site submission form,
-site labels and five CI checks. kururu keeps its feature-area reporting fields
-and project build workflow. The old `Final_Check_Request` label in Nifro is left
-on GitHub for historical issues but is not part of the new managed label set.
+## PathGao itself
+
+PathGao adopts `settings.json`, `labels.json` and `rulesets/main.json` directly.
+Its main branch requires PRs and blocks deletion/force pushes with the same
+administrator recovery bypass. This profile repository has no CI or release
+pipeline, so it has no required CI checks or version-tag ruleset.
+
+From the PathGao checkout, preview the authoritative label manifest directly:
+
+```sh
+./governance/templates/Tools/sync-labels.sh PathGao/PathGao --labels "$PWD/governance/labels.json"
+```
+
+Add `--apply` to apply it. Apply settings with
+`gh api --method PATCH repos/PathGao/PathGao --input governance/settings.json`.
+The templates remain source material; there is no second label manifest to drift.
+
+Nifro keeps its site submission form, `accessibility`, `site submission`, `swift`
+and `upstream` labels, and five CI checks. kururu keeps `accessibility`, its
+feature-area reporting fields and project build workflow. The common ten labels
+are identical across all three repositories.

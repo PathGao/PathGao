@@ -1,6 +1,6 @@
 # Personal repository governance implementation plan
 
-Goal: keep a reusable governance baseline in PathGao and align Nifro and kururu.
+Goal: maintain one governance baseline and apply it to PathGao itself, Nifro and kururu.
 
 Approved design: ordinary `governance/` directory; manual adoption; common settings,
 short templates and labels; project-specific CI and release workflows. The user
@@ -27,3 +27,13 @@ remote snapshots in each repository's Git metadata for comparison and rollback.
 
 Independent local review: no findings. CI re-enablement remains a separate user decision. Publish the three approved
 changes as PRs without merging; remote manifests match the applied baseline.
+
+## Follow-up: include the source repository and adopt Markpad labels
+
+- [x] B1: Apply shared merge settings and main protection to PathGao itself.
+- [x] B2: Copy ten Markpad labels; retain app-specific labels and remove five unused defaults.
+- [x] B3: Verify all three remote configurations and prepare corrective PR changes.
+
+Expected: common labels match Markpad exactly except color case; each repository
+has only its declared labels; no retired names remain; PathGao's auto-delete
+setting is true. Final_Check_Request is manual and never invokes a bot.
