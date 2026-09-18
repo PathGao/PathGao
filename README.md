@@ -23,7 +23,7 @@
 - **[kururu](https://github.com/PathGao/kururu)** // vorssaint修道飞升版
 - **[Markpad](https://github.com/sftwrdotdev/Markpad)** // Markdown 界的记事本
 - **[Nifro](https://github.com/PathGao/Nifro)** // 藏在窗口背后的浪漫
-- 新奇的项目永远不会停止冒出来
+- 敢问前路在何方
 
 ### Reached-the-Shore
 
@@ -31,7 +31,7 @@
 - **[3x-ui](https://github.com/MHSanaei/3x-ui)** // Xray 面板，越过长城的电话线
 - **[graphify](https://github.com/Graphify-Labs/graphify)** // 代码迷宫中的黏菌地图
 - **[tauri](https://github.com/tauri-apps/tauri)** // 初见倾其轻，上手呕其杂
-- 一起推过一程，然后各自赶路
+- 事后洗洗来根烟（不抽，散愁），快活似神仙
 
 ### 思想是架空与现实的桥梁
 
