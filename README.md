@@ -36,6 +36,7 @@
 ### 思想是架空与现实的桥梁
 
 - **[我的工程哲学](./engineering-philosophy.md)** // 一把尺子量四件事：学、建、修、讲
+- **[AI-Workspace](./AI-Workspace/)** // 把日常工作区交给 AI，复刻目录、工具分工与管理约定
 
 <sub>你我的抽象，让这个疯狂的世界显得格外正常。</sub>  
 <sub>致敬《The Secret Life of Walter Mitty》。</sub>
