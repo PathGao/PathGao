@@ -1,5 +1,8 @@
 <img src="./assets/header.svg" alt="白日梦想家" width="100%">
 
+并指为剑，自岁月长河上一捋而过，一物一景皆可溯回当年。  
+一呼一吸，向着无限的可能，做穿越时空的旅人。
+
 ### 真实智人类
 
 好色但乐施，爱财却如命。  
@@ -23,6 +26,7 @@
 - **[vorssaint-utils](https://github.com/vorssaintapp/vorssaint-utils)** // macOS 的瑞士军刀
 - **[Markpad](https://github.com/sftwrdotdev/Markpad)** // Markdown 界的记事本
 - **[Nifro](https://github.com/PathGao/Nifro)** // 藏在窗口背后的浪漫
+- **[MoonDigest](https://github.com/PathGao/MoonDigest)** // 收藏即学会，这回是真的
 - 敢问前路在何方
 
 ### Reached-the-Shore
