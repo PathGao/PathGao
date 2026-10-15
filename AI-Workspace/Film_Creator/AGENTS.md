@@ -49,7 +49,6 @@
 | tools/hyperframes | HyperFrames CLI 与统一 run 入口 |
 | tools/chromium | HyperFrames 专用浏览器，由 run 指定路径 |
 | tools/python | asr-qwen uv 环境的基础解释器 |
-| tools/gsap | 可复用的动画库 |
 
 ## 运行环境
 
