@@ -1,6 +1,6 @@
 # Claude 的 Dock 点击限制与处理
 
-本说明由 [CLAUDE.md](../CLAUDE.md) 引用，不作为 Codex 的操作前置条件。
+本说明由 [CLAUDE.md](../CLAUDE.md) 引用。
 
 ## 已知范围
 
@@ -11,8 +11,6 @@
 | 后台模式 `app_click`、`app_type` | 任意屏幕 | 点击、打字和按钮操作成功 |
 | 全屏控制 `left_click` | Mi Monitor，无 Dock | 点击和打字成功 |
 | 全屏控制 | 内建屏，Dock 所在屏幕 | 点击被拒，报错包含 `would land on 程序坞` |
-
-同日 Codex 在 macOS 27.0（26A428）使用 `cua_repl` 的原生 `App.click([x, y])`，在 Mi Monitor 和内建屏分别点击文本编辑的字体下拉框，两次均观察到菜单打开。测试前后 Dock 的 `autohide` 均为 `0`，未改文档内容，窗口已移回原来的外接屏。此次验证覆盖坐标点击和菜单操作，未验证所有输入方式。
 
 ## 根因
 
